@@ -1,0 +1,97 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://as1.ftcdn.net/v2/jpg/09/42/70/56/1000_F_942705641_ymluyqjNRcVZd0sipxJLKQ7MMw8vGMVx.jpg') no-repeat center center fixed; 
+    background-size: cover; /* Cover the entire viewport */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden; /* Prevent scrollbars from appearing */
+    position: relative; /* For positioning stars */
+}
+
+header {
+    background-color: rgba(44, 62, 80, 0.8);
+    padding: 30px;
+    font-size: 3em;
+    color: #d9f312;
+    backdrop-filter: blur(10px);
+}
+
+section {
+    padding: 20px;
+}
+
+.planet {
+    display: inline-block;
+    margin: 20px;
+    width: 80px;  /* Diameter of the planet */
+    height: 80px; /* Diameter of the planet */
+    border-radius: 50%; /* Circular shape */
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease;
+    overflow: hidden; /* To hide the overflow of the pseudo-element */
+}
+
+.kepler {
+    background: radial-gradient(circle, #c78e27, #993d16);
+}
+
+.trappist {
+    background: radial-gradient(circle, #1e7fa2, #0a4e6a);
+}
+
+.proxima {
+    background: radial-gradient(circle, #d2c836, #b59418);
+}
+
+.gliese {
+    background: radial-gradient(circle, #18a45b, #0b5b2c);
+}
+
+.planet:hover {
+    transform: scale(1.1);
+}
+
+.planet h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 0.8em;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.info {
+    margin-top: 20px;
+    background-color: rgba(44, 62, 80, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+}
+
+footer {
+    margin-top: 40px;
+    padding: 15px;
+    background-color: rgba(44, 62, 80, 0.8);
+}
+
+/* Starry Background */
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Prevent interaction with stars */
+    background: black;
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.8;
+}

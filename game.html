@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exoplanet Exploration Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        Exoplanets Exploration
+    </header>
+
+    <section>
+        <div class="planet kepler" onclick="showInfo('Kepler-452b')">
+            <h3>Kepler-452b</h3>
+        </div>
+        <div class="planet trappist" onclick="showInfo('TRAPPIST-1e')">
+            <h3>TRAPPIST-1e</h3>
+        </div>
+        <div class="planet proxima" onclick="showInfo('Proxima Centauri b')">
+            <h3>Proxima Centauri b</h3>
+        </div>
+        <div class="planet gliese" onclick="showInfo('Gliese 581g')">
+            <h3>Gliese 581g</h3>
+        </div>
+    </section>
+
+    <div id="info" class="info" style="display: none;"></div>
+
+    <footer>
+        &copy; 2024 Exoplanet Exploration | Explore the Cosmos
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
